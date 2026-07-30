@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Ödeshjulet</title>
+
+<style>
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#111;
+    color:white;
+    margin:0;
+    padding:30px;
+}
+
+.card{
+    max-width:650px;
+    margin:40px auto;
+    background:#222;
+    border-radius:20px;
+    padding:30px;
+    display:none;
+    box-shadow:0 0 25px rgba(0,0,0,.5);
+}
+
+h1{
+    margin-top:0;
+    font-size:34px;
+}
+
+h2{
+    color:#FFD700;
+}
+
+p{
+    font-size:22px;
+    line-height:1.5;
+}
+
+.show{
+    display:block;
+}
+
+.footer{
+    margin-top:40px;
+    opacity:.5;
+}
+
+</style>
+
+<script>
+
+window.onload=function(){
+
+let hash=location.hash.substring(1);
+
+if(hash=="") hash="start";
+
+let div=document.getElementById(hash);
+
+if(div)
+div.classList.add("show");
+
+};
+
+</script>
+
+</head>
+
+<body>
+
+<div id="start" class="card">
+<h1>🎡 Ödeshjulet</h1>
+
+<p>
+Du har hittat hjulets portal.
+</p>
+
+<p>
+Skanna QR-koden som hör till ditt nummer.
+</p>
+
+</div>
+
+<div id="1" class="card">
+<h2>1 - Chansning</h2>
+<p>Välj själv: behåll detta kort eller snurra en gång till och acceptera det nya resultatet.</p>
+</div>
+
+<div id="2" class="card">
+<h2>2 - Skål</h2>
+<p>Starta en gemensam skål.</p>
+</div>
+
+<div id="3" class="card">
+<h2>3 - VIP</h2>
+<p>Någon hämtar valfri dryck åt dig.</p>
+</div>
+
+<div id="4" class="card">
+<h2>4 - Okänd vän</h2>
+<p>Prata fem minuter med någon du känner minst.</p>
+</div>
+
+<div id="5" class="card">
+<h2>5 - Dart</h2>
+<p>Utmana valfri person i dart.</p>
+</div>
+
+<div id="6" class="card">
+<h2>6 - Dubbel</h2>
+<p>Du får snurra igen direkt.</p>
+</div>
+
+<div id="7" class="card">
+<h2>7 - Kungamakten</h2>
+<p>Välj vem som ska snurra härnäst.</p>
+</div>
+
+<div id="8" class="card">
+<h2>8 - Genvägen</h2>
+<p>Byt uppdrag med valfri person som redan har snurrat.</p>
+</div>
+
+<div id="9" class="card">
+<h2>9 - Tur i oturen</h2>
+<p>Du får välja vem som får en liten belöning.</p>
+</div>
+
+<div id="10" class="card">
+<h2>10 - Ödets val</h2>
+<p>Värdarna väljer ett spontant uppdrag åt dig.</p>
+</div>
+
+<div id="11" class="card">
+<h2>11 - Hemlig talang</h2>
+<p>Visa eller berätta något oväntat om dig själv.</p>
+</div>
+
+<div id="12" class="card">
+<h2>12 - Gruppfoto</h2>
+<p>Samla minst sex personer till en bild.</p>
+</div>
+
+<div id="13" class="card">
+<h2>13 - Joker</h2>
+<p>Spara detta kort. Du får en extra snurr senare under kvällen.</p>
+</div>
+
+<div id="14" class="card">
+<h2>14 - Musikstafett</h2>
+<p>Välj nästa låt och utse samtidigt personen som väljer låten efter den.</p>
+</div>
+
+<div id="15" class="card">
+<h2>15 - Komplimangen</h2>
+<p>Ge tre personer en genuin komplimang.</p>
+</div>
+
+<div id="16" class="card">
+<h2>16 - Vem i rummet?</h2>
+<p>Ställ en rolig "Vem i rummet?"-fråga till gruppen.</p>
+</div>
+
+<div id="17" class="card">
+<h2>17 - Hemligt uppdrag</h2>
+<p>Gå fram till värdarna. De ger dig ett hemligt uppdrag.</p>
+</div>
+
+<div id="18" class="card">
+<h2>18 - Kaos</h2>
+<p>Värdarna hittar på ett spontant bonusuppdrag.</p>
+</div>
+
+<div id="19" class="card">
+<h2>19 - Tyst minut</h2>
+<p>Under de kommande tio minuterna får du inte säga ordet "ja".</p>
+</div>
+
+<div id="20" class="card">
+<h2>20 - Frestelsen</h2>
+<p>Öppna valfritt annat nummer och läs det, men du måste fortfarande göra ditt eget uppdrag.</p>
+</div>
+
+<div id="21" class="card">
+<h2>21 - Komplimang</h2>
+<p>Ge tre personer varsin genuin komplimang.</p>
+</div>
+
+<div id="22" class="card">
+<h2>22 - Festregissören</h2>
+<p>Du bestämmer vilken aktivitet som är i fokus de kommande 15 minuterna.</p>
+</div>
+
+<div id="23" class="card">
+<h2>23 - Gyllene biljetten</h2>
+<p>Gå fram till värdarna och viska:<br><br><b>Hjulet har talat.</b></p>
+</div>
+
+<div id="star" class="card">
+<h2>⭐ STJÄRNVINST ⭐</h2>
+
+<p style="font-size:40px;text-align:center;">
+KAMEHAMEHA!
+</p>
+
+</div>
+
+</body>
+</html>
