@@ -62,8 +62,24 @@ if(hash=="") hash="start";
 
 let div=document.getElementById(hash);
 
-if(div)
-div.classList.add("show");
+if(div){
+    div.classList.add("show");
+
+    if(hash!="start"){
+        let text=document.createElement("div");
+        text.className="footer";
+        text.innerHTML="🎡 Ödeshjulet har talat. Lycka till...";
+        div.appendChild(text);
+    }
+}
+
+    if(hash!="start"){
+        let text=document.createElement("div");
+        text.className="footer";
+        text.innerHTML="🎡 Ödeshjulet har talat. Lycka till...";
+        div.appendChild(text);
+    }
+}
 
 };
 
