@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Ödeshjulet</title>
+
+<style>
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#111;
+    color:white;
+    margin:0;
+    padding:30px;
+}
+
+.card{
+    max-width:650px;
+    margin:40px auto;
+    background:#222;
+    border-radius:20px;
+    padding:30px;
+    display:none;
+    box-shadow:0 0 25px rgba(0,0,0,.5);
+}
+
+h1{
+    margin-top:0;
+    font-size:34px;
+}
+
+h2{
+    color:#FFD700;
+}
+
+p{
+    font-size:22px;
+    line-height:1.5;
+}
+
+.show{
+    display:block;
+}
+
+.footer{
+    margin-top:40px;
+    opacity:.5;
+}
+
+</style>
+
+<script>
+
+window.onload=function(){
+
+let hash=location.hash.substring(1);
+
+if(hash=="") hash="start";
+
+let div=document.getElementById(hash);
+
+if(div)
+div.classList.add("show");
+
+};
+
+</script>
+
+</head>
+
+<body>
+
+<div id="start" class="card">
+<h1>🎡 Ödeshjulet</h1>
+
+<p>
+Du har hittat hjulets portal.
+</p>
+
+<p>
+Skanna QR-koden som hör till ditt nummer.
+</p>
+
+</div>
+
+<div id="1" class="card">
+<h2>1 - Chans till dans 🕺🪩💃</h2>
+<p>Välj själv (under kvällen): gör en solodans inför publik eller bilda ett litet danståg med minst fem personer.</p>
+</div>
+
+<div id="2" class="card">
+<h2>2 - Skål 🥂</h2>
+<p>Starta en gemensam skål. Ingen tvekan, du klarar detta!</p>
+</div>
+
+<div id="3" class="card">
+<h2>3 - VIP 🪩</h2>
+<p>Be någon hämta valfri dryck åt dig. Blir det knas, hänvisa till Ödeshjulet.</p>
+</div>
+
+<div id="4" class="card">
+<h2>4 - Okänd vän 👯‍♀️</h2>
+<p>Prata fem minuter med någon du inte känner så bra. Kanske har du hittat en ny bästis?</p>
+</div>
+
+<div id="5" class="card">
+<h2>5 - Dart 🎯</h2>
+<p>Utmana valfri person i dart. Trivia: Visste du att Lagget fick spela dart på sin svensexa?</p>
+</div>
+
+<div id="6" class="card">
+<h2>6 - Mytomanen 👴🏻</h2>
+<p>Dra en galen lögn återkommande under kvällen, stå fast vid att detta verkligen har hänt. </p>
+</div>
+
+<div id="7" class="card">
+<h2>7 - Bananas 🍌🍍</h2>
+<p> Välj mellan ordet "banan" eller "ananas". Nämn ordet tre gånger i ett samtal.</p>
+</div>
+
+<div id="8" class="card">
+<h2>8 - Tankeinfiltratören 🧠</h2>
+<p>Försök få någon att säga ordet "avdragsgillt" (nivå lätt) alternativt "penetrera" (nivå svårare).</p>
+</div>
+
+<div id="9" class="card">
+<h2>9 - Kameralusen 📸</h2>
+<p>Ta en selfie under kvällen med någon du inte kände sedan tidigare.</p>
+</div>
+
+<div id="10" class="card">
+<h2>10 - Ödets val 🗿</h2>
+<p>Värdarna väljer ett spontant uppdrag åt dig. Sök upp en av dem fort innan du blir upptäckt.
+
+*meddelandet förstörs inom 3...2...1...* 💥</p>
+</div>
+
+<div id="11" class="card">
+<h2>11 - Hemlig talang 🕵🏻‍♂️</h2>
+<p>Visa eller berätta något oväntat om dig själv för någon/några av festdeltagarna.</p>
+</div>
+
+<div id="12" class="card">
+<h2>12 - Gruppfoto 📸</h2>
+<p>Samla minst tre personer till en gruppbild.</p>
+</div>
+
+<div id="13" class="card">
+<h2>13 - Initieraren 🧚</h2>
+<p>Få någon att berätta hur de lärde känna värdparet.</p>
+</div>
+
+<div id="14" class="card">
+<h2>14 - Uppdrag-ception 🧠</h2>
+<p>Få någon att gissa ditt uppdrag (utan att avslöja det). Det är ditt uppdrag - fattar du?</p>
+</div>
+
+<div id="15" class="card">
+<h2>15 - Komplimangen ❤️</h2>
+<p>Ge tre personer en genuin komplimang.</p>
+</div>
+
+<div id="16" class="card">
+<h2>16 - Långväga gäster ✈️</h2>
+<p>Ta reda på vem som rest längst för att komma hit.</p>
+</div>
+
+<div id="17" class="card">
+<h2>17 - VM-sommar ⚽️</h2>
+<p>Under kvällen: Led in ett samtal på fotbolls-VM, alternativt bjud med någon gäst till att "lira lite boll på gräset".</p>
+</div>
+
+<div id="18" class="card">
+<h2>18 - Kaos 💥</h2>
+<p>Någon gång under kvällen; res dig upp, se lite förvirrad och stressad ut och skynda hastigt iväg. Kom sedan tillbaka efter 1 minut helt normal. Om någon undrar vad som hänt verka helt oförstående.</p>
+</div>
+
+<div id="19" class="card">
+<h2>19 - Tyst minut ⏰</h2>
+<p>Under de kommande tio minuterna får du inte säga orden "ja" eller "nej".</p>
+</div>
+
+<div id="20" class="card">
+<h2>20 - Frestelsen 🤤</h2>
+<p>Scanna valfritt annat nummer (EJ STJÄRNVINSTEN) och läs det, detta blir ditt uppdrag.</p>
+</div>
+
+<div id="21" class="card">
+<h2>21 - Dinosaurienörden 🦖</h2>
+<p>Fråga tre personer vilken dinosaurie de hade valt att vara.</p>
+</div>
+
+<div id="22" class="card">
+<h2>22 - Lekledaren 🛝</h2>
+<p>Initiera någon lek eller aktivitet under kvällen.</p>
+</div>
+
+<div id="23" class="card">
+<h2>23 - Gyllene biljetten 🪎</h2>
+<p>Gå fram till Lagget och viska:<br><br><b>"Hjulet har talat".</b></p>
+</div>
+
+<div id="star" class="card">
+<h2>⭐ STJÄRNVINST ⭐</h2>
+
+<p style="font-size:40px;text-align:center;">
+KAMEHAMEHA!
+(kontakta värdparet för ditt pris)
+</p>
+
+</div>
+
+</body>
+</html>
