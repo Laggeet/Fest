@@ -54,24 +54,42 @@ p{
 
 <script>
 
-window.onload=function(){
+function showPage(){
 
-let hash=location.hash.substring(1);
+    // Dölj alla sidor först
+    let cards = document.querySelectorAll(".card");
+    cards.forEach(card => {
+        card.classList.remove("show");
+    });
 
-if(hash=="") hash="start";
+    let hash = location.hash.substring(1);
 
-let div=document.getElementById(hash);
+    if(hash=="") hash="start";
 
-if(div){
-    div.classList.add("show");
+    let div = document.getElementById(hash);
 
-    if(hash!="start"){
-        let text=document.createElement("div");
-        text.className="footer";
-        text.innerHTML="🎡 Ödeshjulet har talat. Lycka till...";
-        div.appendChild(text);
+    if(div){
+        div.classList.add("show");
+
+        // Lägg bara till fottext om det är ett uppdrag
+        if(hash!="start"){
+            let oldFooter = div.querySelector(".footer");
+
+            // Undvik dubbla texter om sidan öppnas igen
+            if(!oldFooter){
+                let text=document.createElement("div");
+                text.className="footer";
+                text.innerHTML="🎡 Ödeshjulet har talat. Lycka till...";
+                div.appendChild(text);
+            }
+        }
     }
 }
+
+window.onload = showPage;
+
+// Körs när QR-koden ändras från t.ex. #3 till #2
+window.onhashchange = showPage;
 
 };
 
